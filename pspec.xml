@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE INARY SYSTEM "https://gitlab.com/sulinos/sulinproject/inary/raw/master/inary-spec.dtd">
+<INARY>
+    <Source>
+        <Name>example</Name>
+        <Homepage>http://example.org/</Homepage>
+        <Packager>
+            <Name>Name Surname</Name>
+            <Email>mail@example.org</Email>
+        </Packager>
+        <License>exampleV2</License>
+        <IsA>app:example</IsA>
+        <Summary>This is example Summary</Summary>
+        <Description>This is example description</Description>
+        <Archive sha1sum="example_sha1sum" type="tarxz">https://example.org/example.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>example-build-dependency</Dependency>
+            <Dependency>another-build-example-dependency</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>example-package-name</Name>
+        <RuntimeDependencies>
+            <Dependency>example-dependency</Dependency>
+            <Dependency>another-example-dependency</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc/nano</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="data">/usr/share/nano</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/bin</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>1970-01-01</Date>
+            <Version>0.0.1</Version>
+            <Comment>example comment</Comment>
+            <Name>Name Surname</Name>
+            <Email>mail@example.org</Email>
+        </Update>
+    </History>
+</INARY>
