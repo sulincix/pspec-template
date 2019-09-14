@@ -3,6 +3,7 @@
 <INARY>
     <Source>
         <Name>example</Name>
+        <Rfp>Example rfp packager neme</Rfp>
         <Homepage>http://example.org/</Homepage>
         <Packager>
             <Name>Name Surname</Name>
